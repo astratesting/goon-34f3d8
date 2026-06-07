@@ -25,7 +25,7 @@ export default function CTA() {
       <div className="absolute inset-0">
         {/* Prism gradient effect */}
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-conic from-flame-orange via-vivid-magenta to-acid-green opacity-20" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-prism-gradient opacity-20" />
         </div>
 
         {/* Gradient orbs */}
