@@ -55,7 +55,7 @@ const tiers = [
   },
 ];
 
-export default function Pricing() {
+export default function PricingPage() {
   const { data: session } = useSession();
   const router = useRouter();
   const [loading, setLoading] = useState<string | null>(null);
@@ -88,10 +88,10 @@ export default function Pricing() {
   };
 
   return (
-    <section className="px-6 py-20">
+    <div className="min-h-screen bg-near-black text-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Simple, Transparent Pricing</h2>
+          <h1 className="text-5xl font-bold mb-4">Simple, Transparent Pricing</h1>
           <p className="text-xl text-gray-400">
             Choose the plan that fits your trading style
           </p>
@@ -156,7 +156,17 @@ export default function Pricing() {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-16">
+          <p className="text-gray-400 mb-4">All plans include:</p>
+          <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-500">
+            <span>✓ No credit card required for Free</span>
+            <span>✓ Cancel anytime</span>
+            <span>✓ 7-day money-back guarantee</span>
+            <span>✓ Secure payment via Stripe</span>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
