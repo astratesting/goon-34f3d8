@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: #FFFBF5;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+}
+
+.btn-primary {
+  @apply bg-violet-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-violet-600 transition-all duration-200 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply bg-coral-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-coral-600 transition-all duration-200 shadow-lg hover:shadow-xl;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-lg border border-gray-100 p-6;
+}
